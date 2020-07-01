@@ -201,9 +201,53 @@ footer p {
 }
 
 /* Contact */
-#contact .container {
-  padding: 5rem;
+#contact {
+  background-image: url(../img/contact.jpg);
+  background-color: rgba(255,255,255,.5);
+  background-blend-mode: lighten;
+  min-height: 100vh;
+  background-size: cover;
+  margin: 80px auto;
 }
+
+#contact .page-title {
+  font-family: 'Noto Serif', serif;
+  color: #000;
+  font-size: 3rem;
+  border-bottom: 1px #000 solid;
+}
+
+#contact .wrapper {
+  margin: 100px;
+}
+
+form div {
+  margin-bottom: 14px;
+}
+
+label {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255,255,255,.5);
+  border: 1px #fff solid;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+input[type=submit] {
+  padding: 5px 10px;
+  margin-left: 60px;
+}
+
+
 
 /* News */
 #news .container {
@@ -237,5 +281,28 @@ footer p {
   #home-middle .container h2 {
     font-size: 1.25rem;
   }
-}
 
+  /* Contact */
+  #contact {
+    background-size: contain;
+  }
+
+  #contact .page-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+
+  #contact label{
+    font-size: 0.9rem;
+  }
+
+  #contact .button {
+    position: relative;
+    top:-222px;
+    left: 160px;
+    font-size: 1.125rem;
+  }
+
+}
