@@ -2,7 +2,7 @@
 <html  lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>玄-Hajime</title>
+  <title>玄-Hajime Contact</title>
   <meta name="description" content="創作和太鼓グループ「玄-Hajime」の活動記録">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"  >
   <link rel="stylesheet" href="css/style.css">
@@ -25,15 +25,27 @@
     </header>
 
     <div id="contact" class="wrapper">
-      <div class="container">
-      <p>
-        インスタのフォローにつなげる。
-      </p>
-      <p>
-        メールで連絡できるフォームつくる。
-      </p>
+      <h2 class="page-title">Contact</h2>
+      <form action="#">
+        <div>
+          <label for="name">お名前 / Name</label>
+          <input type="text" id="name" name="your-name">
+        </div>
+
+        <div>
+          <label for="email">メールアドレス / Email</label>
+          <input type="email" id="email" name="your-email">
+        </div>
+
+        <div>
+          <label for="message">メッセージ / Message</label>
+          <textarea id="message" name="your-message"></textarea>
+        </div>
+
+        <input type="submit" class="button" value="送信">
+     </form>
     </div>
-    </div>
+   
 
 
 
