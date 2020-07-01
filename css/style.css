@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 /* 共通部分 */
-
 html {
   font-size: 100%;
   scroll-behavior: smooth;
@@ -27,6 +26,11 @@ li {
   padding: 0 4%;
 }
 
+.wrap {
+  overflow: hidden;
+}
+
+
 /*Header */
 
 
@@ -38,7 +42,6 @@ li {
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   z-index: 10;
