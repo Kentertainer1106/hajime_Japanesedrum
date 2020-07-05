@@ -35,8 +35,8 @@ li {
 
 .page-header {
   max-width: 100%;
-  background: #432;
-  opacity: 0.9;
+  background: #000;
+  opacity: 0.8;
   position: fixed;
   top: 0;
   left: 0;
@@ -263,7 +263,8 @@ input[type=submit] {
 
 
   .main-nav li {
-    margin-left: 2.5rem;
+    margin-left: 1rem;
+    font-size: 1rem;
   }
 
   .page-title {
