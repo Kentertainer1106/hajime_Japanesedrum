@@ -33,7 +33,6 @@ li {
 
 /*Header */
 
-
 .page-header {
   max-width: 100%;
   background: #432;
@@ -48,7 +47,6 @@ li {
 }
 
 .logo {
-  width: 210px;
   margin-top: 14px;
   font-family: 'Noto Serif', serif;
   font-weight: normal;
@@ -256,13 +254,16 @@ input[type=submit] {
 
 @media (max-width: 600px) {
   .page-header {
-    justify-content: center;
     width: 100%;
-  }
-
+}
 
   .page-header h1, .page-header li {
     font-size: 1rem;
+  }
+
+
+  .main-nav li {
+    margin-left: 2.5rem;
   }
 
   .page-title {
@@ -274,6 +275,10 @@ input[type=submit] {
     font-size: 1.2rem;
   }
 
+  .home-content a {
+    margin-bottom: 2rem;
+  }
+
   .button {
     margin-top: 10rem;
   }
@@ -282,27 +287,6 @@ input[type=submit] {
     font-size: 1.25rem;
   }
 
-  /* Contact */
-  #contact {
-    background-size: contain;
-  }
-
-  #contact .page-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-
-
-  #contact label{
-    font-size: 0.9rem;
-  }
-
-  #contact .button {
-    position: relative;
-    top:-222px;
-    left: 160px;
-    font-size: 1.125rem;
-  }
+ 
 
 }
