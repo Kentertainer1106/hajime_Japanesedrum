@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: "Yu Gothic Medium", "游ゴシック Medium", "Yu Gothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "sans-serif";
+  font-family: "Noto Serif", "sans-serif";
   line-height: 1.7;
   color: #432;
 }
@@ -41,6 +41,7 @@ li {
   top: 0;
   left: 0;
   right: 0;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   z-index: 10;
@@ -88,23 +89,28 @@ li {
 #home {
   background-image: url(../img/background2.jpg);
   min-height: 100vh;
+  background-size: cover;
+  background-color: #000;
+  background-blend-mode: hard-light;
+
 }
 
 .big-bg {
   background-size: cover;
-  background-position: center top;
-  background-color: #432;
-  background-blend-mode: hard-light;
+  background-position: center;
+  padding: 0;
 }
 
 .home-content {
   text-align: center;
   padding-top: 8%;
-
 }
 
-.home-content p {
-  font-size: 1.5rem;
+.home-content h2 {
+  font-size: 2rem;
+}
+
+.home-content h3 {
   margin: 10px 0 42px;
   color: #fff;
 }
@@ -246,48 +252,51 @@ input[type=submit] {
 }
 
 
-
-/* News */
-#news .container {
-  padding: 5rem;
-}
-
 @media (max-width: 600px) {
+  #home {
+    background-size: contain;
+    min-height: fit-content;
+  }
+
+  /* Header */
   .page-header {
     width: 100%;
-}
+  }
 
   .page-header h1, .page-header li {
     font-size: 1rem;
   }
-
 
   .main-nav li {
     margin-left: 1rem;
     font-size: 1rem;
   }
 
-  .page-title {
+  /* Home */
+  .home-content h2 {
     font-size: 1.5rem;
     margin-top: 5rem;
   }
 
-  .home-content p {
-    font-size: 1.2rem;
+  .home-content h3 {
+    font-size: 0.7rem;
+  }
+
+  .home-content h1 {
+    font-size: 1.5rem;
   }
 
   .home-content a {
     margin-bottom: 2rem;
   }
 
-  .button {
-    margin-top: 10rem;
+  /* Home-middle */
+  #home-middle h1 {
+    font-size: 1.2rem;
   }
 
-  #home-middle .container h2 {
-    font-size: 1.25rem;
+  #home-middle h2 {
+    font-size: 1rem;
   }
-
- 
 
 }
